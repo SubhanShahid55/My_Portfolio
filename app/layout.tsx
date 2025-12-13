@@ -108,7 +108,7 @@ const jsonLd = {
   url: "https://sanaz9t9.vercel.app",
   image: "https://sanaz9t9.vercel.app/images/profile.jpg",
   sameAs: [
-    "https://www.linkedin.com/in/sanahafeez",
+    "https://www.linkedin.com/in/sana-hafeez-839599361/",
     "https://github.com/sanahafeez",
   ],
   jobTitle: "UI/UX Designer",

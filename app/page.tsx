@@ -442,7 +442,7 @@ export default function Portfolio() {
                   <Github size={22} />
                 </motion.a>
                 <motion.a
-                  href="https://linkedin.com/in/sanahafeez"
+                  href="https://www.linkedin.com/in/sana-hafeez-839599361/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-gray-600 hover:text-pink-500 transition-all"
@@ -1024,7 +1024,7 @@ export default function Portfolio() {
                       icon: Linkedin,
                       label: "LinkedIn",
                       value: "sanahafeez",
-                      href: "https://linkedin.com/in/sanahafeez",
+                      href: "https://www.linkedin.com/in/sana-hafeez-839599361/",
                     },
                     { icon: MapPin, label: "Location", value: "Abbottabad, Pakistan" },
                   ].map((item, index) => (
@@ -1167,7 +1167,7 @@ export default function Portfolio() {
                 <Github size={18} />
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/sanahafeez"
+                href="https://www.linkedin.com/in/sana-hafeez-839599361/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors"
