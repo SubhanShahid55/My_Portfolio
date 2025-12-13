@@ -6,9 +6,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
- 
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  experimental: {
+    optimizeCss: true,
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
   },
 }
 
