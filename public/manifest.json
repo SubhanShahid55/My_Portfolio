@@ -1,0 +1,26 @@
+{
+  "name": "Sana Hafeez Portfolio",
+  "short_name": "Sana Hafeez",
+  "description": "UI/UX Designer, Digital Marketing & Graphic Design Enthusiast - Crafting beautiful digital experiences with creativity and passion",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ec4899",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["portfolio", "design", "creative"],
+  "lang": "en",
+  "dir": "ltr"
+}

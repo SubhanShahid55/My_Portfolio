@@ -1,0 +1,14 @@
+# Robots.txt for Sana Hafeez Portfolio
+# https://sanaz9t9.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sanaz9t9.vercel.app/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin or API routes if any
+Disallow: /api/
