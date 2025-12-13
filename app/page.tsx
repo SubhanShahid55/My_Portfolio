@@ -33,6 +33,7 @@ import {
   Loader2,
   Moon,
   Sun,
+  Code,
 } from "lucide-react"
 import {
   SiPython,
@@ -1298,9 +1299,9 @@ export default function Portfolio() {
             >
               <Card className="border-0 shadow-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm h-full">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-gray-800 dark:text-gray-100">
-                    <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-fuchsia-500 rounded-xl flex items-center justify-center">
-                      <span className="text-white font-bold">{"</>"}</span>
+                <CardTitle className="flex items-center gap-3 text-gray-800 dark:text-gray-100">
+                    <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center overflow-hidden">
+                      <img src="/programming.webp" alt="Programming" className="w-full h-full object-cover" />
                     </div>
                     Programming Languages
                   </CardTitle>
