@@ -33,6 +33,7 @@ import {
   Loader2,
   Moon,
   Sun,
+  Download,
   Code,
 } from "lucide-react"
 import {
@@ -612,6 +613,15 @@ export default function Portfolio() {
                   <Mail className="mr-2" size={18} />
                   Let's Connect
                 </Button>
+                <Button
+                  asChild
+                  className="bg-gradient-to-r from-purple-500 to-fuchsia-500 hover:from-purple-600 hover:to-fuchsia-600 text-white px-8 py-6 rounded-full text-base font-medium shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30 transition-all"
+                >
+                  <a href="/Sana_hafeez_CV.pdf" download>
+                    <Download className="mr-2" size={18} />
+                    Download CV
+                  </a>
+                </Button>
               </motion.div>
 
               {/* Social Links */}
@@ -1115,15 +1125,18 @@ export default function Portfolio() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -24 }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="grid gap-6 md:grid-cols-2 xl:grid-cols-3"
+                  className="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
                 >
                   {Array.from({ length: Math.min(3, instagramEmbeds.length) }).map((_, offset) => {
                     const index = (activeInstagramIndex + offset) % instagramEmbeds.length
                     const item = instagramEmbeds[index]
+                    // Show: 1 on mobile, 2 on md, 3 on xl
+                    const hideOnMobile = offset > 0 ? "hidden md:block" : ""
+                    const hideOnTablet = offset > 1 ? "md:hidden xl:block" : ""
                     return (
                       <div
                         key={item.url}
-                        className="group rounded-3xl bg-gradient-to-br from-pink-200 via-rose-100 to-purple-200 dark:from-pink-800/60 dark:via-rose-800/40 dark:to-purple-800/60 p-[3px] shadow-2xl shadow-pink-300/50 dark:shadow-pink-900/40 hover:shadow-pink-400/70 dark:hover:shadow-pink-700/60 transition-all duration-300 hover:scale-[1.01]"
+                        className={`group rounded-3xl bg-gradient-to-br from-pink-200 via-rose-100 to-purple-200 dark:from-pink-800/60 dark:via-rose-800/40 dark:to-purple-800/60 p-[3px] shadow-2xl shadow-pink-300/50 dark:shadow-pink-900/40 hover:shadow-pink-400/70 dark:hover:shadow-pink-700/60 transition-all duration-300 hover:scale-[1.01] ${hideOnMobile} ${hideOnTablet}`}
                       >
                         <div className="relative rounded-[22px] bg-white dark:bg-gray-900 overflow-hidden">
                           <div
