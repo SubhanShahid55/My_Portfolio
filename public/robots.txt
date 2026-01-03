@@ -1,14 +1,33 @@
 # Robots.txt for Sana Hafeez Portfolio
 # https://sanaz9t9.vercel.app
+# SEO Optimized Robots Configuration
 
+# Allow all bots
 User-agent: *
+Allow: /
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Disallow API and admin routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /private/
+
+# Allow crawling of specific important pages
 Allow: /
 
 # Sitemap location
 Sitemap: https://sanaz9t9.vercel.app/sitemap.xml
 
-# Crawl-delay for polite crawling
+# General crawl-delay for other bots
 Crawl-delay: 1
-
-# Disallow admin or API routes if any
-Disallow: /api/
+Request-rate: 1/10s

@@ -20,34 +20,40 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sanaz9t9.vercel.app"),
   title: {
-    default: "Sana Hafeez | UI/UX Designer & Creative Enthusiast",
-    template: "%s | Sana Hafeez Portfolio",
+    default: "Sana Hafeez - UI/UX Designer & Creative Portfolio",
+    template: "%s | Sana Hafeez",
   },
   description:
-    "Sana Hafeez - UI/UX Designer, Digital Marketing & Graphic Design Enthusiast from Pakistan. Crafting beautiful digital experiences with creativity and passion. View my portfolio, projects, and get in touch.",
+    "Sana Hafeez is a UI/UX Designer, Digital Marketing & Graphic Design specialist from Pakistan. View my award-winning portfolio, innovative projects, and creative design work. Available for freelance projects.",
   keywords: [
     "Sana Hafeez",
-    "Sana Hafeez Portfolio",
-    "Sana Hafeez Designer",
-    "UI/UX Designer",
-    "UI Designer Pakistan",
-    "UX Designer",
-    "Digital Marketing",
-    "Graphic Design",
-    "Web Designer",
-    "Creative Designer",
-    "Portfolio",
-    "Pakistan Designer",
-    "Freelance Designer",
-    "Visual Designer",
-    "Product Designer",
+    "Sana Hafeez portfolio",
+    "Sana Hafeez designer",
+    "Sana Hafeez Pakistan",
+    "UI UX designer Pakistan",
+    "UI designer",
+    "UX designer",
+    "graphic designer",
+    "digital marketing designer",
+    "web designer",
+    "creative designer",
+    "freelance designer Pakistan",
+    "visual designer",
+    "product designer",
+    "design portfolio",
+    "Figma designer",
+    "Adobe XD designer",
+    "branding designer",
+    "UI design services",
   ],
   authors: [{ name: "Sana Hafeez", url: "https://sanaz9t9.vercel.app" }],
   creator: "Sana Hafeez",
   publisher: "Sana Hafeez",
+  applicationName: "Sana Hafeez Portfolio",
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
@@ -61,77 +67,148 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://sanaz9t9.vercel.app",
     siteName: "Sana Hafeez Portfolio",
-    title: "Sana Hafeez | UI/UX Designer & Creative Enthusiast",
+    title: "Sana Hafeez - UI/UX Designer & Creative Portfolio",
     description:
-      "Sana Hafeez - UI/UX Designer, Digital Marketing & Graphic Design Enthusiast. Crafting beautiful digital experiences with creativity and passion.",
+      "Sana Hafeez - Professional UI/UX Designer & Creative Specialist. Explore innovative designs and digital solutions crafted with passion.",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "https://sanaz9t9.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Sana Hafeez - UI/UX Designer Portfolio",
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sana Hafeez | UI/UX Designer & Creative Enthusiast",
+    title: "Sana Hafeez - UI/UX Designer & Creative Portfolio",
     description:
-      "UI/UX Designer, Digital Marketing & Graphic Design Enthusiast - Crafting beautiful digital experiences",
-    images: ["/images/og-image.png"],
+      "Professional UI/UX & Graphic Designer from Pakistan. View portfolio, projects, and creative work.",
+    images: ["https://sanaz9t9.vercel.app/og-image.png"],
     creator: "@sanahafeez",
+    site: "@sanahafeez",
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "google-site-verification-code",
   },
   alternates: {
     canonical: "https://sanaz9t9.vercel.app",
+    languages: {
+      "en-US": "https://sanaz9t9.vercel.app",
+      "en": "https://sanaz9t9.vercel.app",
+    },
   },
   category: "portfolio",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/icon-dark-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/mask-icon.svg",
+        color: "#ec4899",
+      },
+    ],
   },
   manifest: "/manifest.json",
   other: {
     "theme-color": "#ec4899",
     "msapplication-TileColor": "#ec4899",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+    "format-detection": "telephone=no",
   },
 }
 
-// JSON-LD Structured Data for SEO
-const jsonLd = {
+// JSON-LD Structured Data for SEO - Person Schema
+const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://sanaz9t9.vercel.app/#person",
   name: "Sana Hafeez",
   url: "https://sanaz9t9.vercel.app",
-  image: "https://sanaz9t9.vercel.app/images/profile.jpg",
+  image: "https://sanaz9t9.vercel.app/og-image.png",
   sameAs: [
     "https://www.linkedin.com/in/sana-hafeez-839599361/",
-    "https://github.com/sanahafeez",
+    "https://www.instagram.com/sanahafeez",
   ],
   jobTitle: "UI/UX Designer",
   worksFor: {
     "@type": "Organization",
-    name: "Freelance",
+    name: "Self-Employed",
   },
   description:
-    "UI/UX Designer, Digital Marketing & Graphic Design Enthusiast from Pakistan",
+    "Professional UI/UX Designer and Graphic Design Specialist from Pakistan with expertise in digital marketing and creative design solutions.",
+  email: "mailto:your-email@example.com",
+  telephone: "+92-300-XXXX-XXXX",
   knowsAbout: [
     "UI Design",
     "UX Design",
     "Graphic Design",
     "Digital Marketing",
     "Web Design",
+    "Product Design",
     "Figma",
     "Adobe XD",
+    "Adobe Photoshop",
+    "Canva",
+    "Branding",
   ],
   address: {
     "@type": "PostalAddress",
-    addressCountry: "Pakistan",
+    addressCountry: "PK",
+    addressRegion: "Pakistan",
+  },
+}
+
+// JSON-LD Portfolio/Website Schema
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://sanaz9t9.vercel.app/#website",
+  url: "https://sanaz9t9.vercel.app",
+  name: "Sana Hafeez Portfolio",
+  description:
+    "Professional portfolio showcasing UI/UX design, graphic design, and digital marketing work by Sana Hafeez",
+  author: {
+    "@id": "https://sanaz9t9.vercel.app/#person",
+  },
+  creator: {
+    "@id": "https://sanaz9t9.vercel.app/#person",
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate:
+        "https://sanaz9t9.vercel.app/?s={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+}
+
+// JSON-LD Organization Schema
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://sanaz9t9.vercel.app/#organization",
+  name: "Sana Hafeez",
+  url: "https://sanaz9t9.vercel.app",
+  logo: "https://sanaz9t9.vercel.app/favicon.svg",
+  description: "Professional UI/UX Designer and Creative Design Services",
+  sameAs: [
+    "https://www.linkedin.com/in/sana-hafeez-839599361/",
+    "https://www.instagram.com/sanahafeez",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Customer Support",
+    email: "your-email@example.com",
   },
 }
 
@@ -143,14 +220,30 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        {/* Person Schema */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        {/* Website Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        {/* Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <link rel="canonical" href="https://sanaz9t9.vercel.app" />
         <meta name="author" content="Sana Hafeez" />
+        <meta name="copyright" content="Sana Hafeez" />
         <meta name="geo.region" content="PK" />
         <meta name="geo.placename" content="Pakistan" />
+        <meta name="geo.position" content="24.8607;67.0011" />
+        <meta name="ICBM" content="24.8607, 67.0011" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="language" content="English" />
       </head>
       <body className={`${poppins.variable} ${playfair.variable} font-sans antialiased`}>
         <ThemeProvider
