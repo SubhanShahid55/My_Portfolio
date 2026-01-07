@@ -24,9 +24,11 @@ export const metadata: Metadata = {
     template: "%s | Sana Hafeez",
   },
   description:
-    "Sana Hafeez is a UI/UX Designer, Digital Marketing & Graphic Design specialist from Pakistan. View my award-winning portfolio, innovative projects, and creative design work. Available for freelance projects.",
+    "Sana Hafeez (Sana) is a UI/UX Designer, Digital Marketing & Graphic Design specialist from Pakistan. Explore my portfolio, projects, and creative work. Available for freelance projects.",
   keywords: [
+    "Sana",
     "Sana Hafeez",
+    "Sana portfolio",
     "Sana Hafeez portfolio",
     "Sana Hafeez designer",
     "Sana Hafeez Pakistan",
@@ -72,11 +74,11 @@ export const metadata: Metadata = {
       "Sana Hafeez - Professional UI/UX Designer & Creative Specialist. Explore innovative designs and digital solutions crafted with passion.",
     images: [
       {
-        url: "https://sanaz9t9.vercel.app/og-image.png",
+        url: "https://sanaz9t9.vercel.app/images/pic.jpg",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "Sana Hafeez - UI/UX Designer Portfolio",
-        type: "image/png",
+        type: "image/jpeg",
       },
     ],
   },
@@ -85,12 +87,9 @@ export const metadata: Metadata = {
     title: "Sana Hafeez - UI/UX Designer & Creative Portfolio",
     description:
       "Professional UI/UX & Graphic Designer from Pakistan. View portfolio, projects, and creative work.",
-    images: ["https://sanaz9t9.vercel.app/og-image.png"],
+    images: ["https://sanaz9t9.vercel.app/images/pic.jpg"],
     creator: "@sanahafeez",
     site: "@sanahafeez",
-  },
-  verification: {
-    google: "google-site-verification-code",
   },
   alternates: {
     canonical: "https://sanaz9t9.vercel.app",
@@ -102,18 +101,11 @@ export const metadata: Metadata = {
   category: "portfolio",
   icons: {
     icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-light-32x32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/mask-icon.svg",
-        color: "#ec4899",
-      },
-    ],
   },
   manifest: "/manifest.json",
   other: {
@@ -131,8 +123,9 @@ const personJsonLd = {
   "@type": "Person",
   "@id": "https://sanaz9t9.vercel.app/#person",
   name: "Sana Hafeez",
+  alternateName: ["Sana"],
   url: "https://sanaz9t9.vercel.app",
-  image: "https://sanaz9t9.vercel.app/og-image.png",
+  image: "https://sanaz9t9.vercel.app/images/pic.jpg",
   sameAs: [
     "https://www.linkedin.com/in/sana-hafeez-839599361/",
     "https://www.instagram.com/sanahafeez",
@@ -144,8 +137,8 @@ const personJsonLd = {
   },
   description:
     "Professional UI/UX Designer and Graphic Design Specialist from Pakistan with expertise in digital marketing and creative design solutions.",
-  email: "mailto:your-email@example.com",
-  telephone: "+92-300-XXXX-XXXX",
+  email: "mailto:sanahafeez8oct@gmail.com",
+  telephone: "+923143707610",
   knowsAbout: [
     "UI Design",
     "UX Design",
@@ -208,7 +201,7 @@ const organizationJsonLd = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "Customer Support",
-    email: "your-email@example.com",
+    email: "sanahafeez8oct@gmail.com",
   },
 }
 
